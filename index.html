@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MMV - Serviços Contábeis</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" href="img/logosemfundo.png">
+
+  <style>
+    @keyframes moveTitle {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    h4.porque, p.porque {
+      font-size: 2.5rem;
+      text-align: center;
+      animation: moveTitle 3s ease-out;
+    }
+
+    .custom-col {
+      padding: 20px;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 50px;
+      text-align: center;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 50px;
+    }
+
+    nav a {
+      margin-right: 10px;
+    }
+
+    /* Ajustes solicitados */
+    #nossos-servicos {
+      padding-top: 20px;
+      margin-bottom: 0px;
+    }
+
+    #sobre {
+      padding-top: 50px;
+    }
+
+    .img-personalizada {
+      border: 5px solid #dc3545; /* Borda vermelha */
+      border-radius: 400px; /* Borda arredondada */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+      max-height: 250px;
+    }
+
+    .img-personalizada:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9); /* Sombra mais forte ao passar o mouse */
+      transform: scale(1.02); /* Leve aumento da imagem ao passar o mouse */
+
+
+    
+}
+
+  </style>
+</head>
+
+<body style="background: white;">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/logosemfundo1.png" alt="Logo MMV" class="img-fluid" style="max-height: 250px;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-principal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#inicio" class="nav-link px-3 text-center">Início</a></li>
+            <li class="nav-item"><a href="#nossos-servicos" class="nav-link px-3 text-center">Serviços</a></li>
+            <li class="nav-item"><a href="#sobre" class="nav-link px-3 text-center">Sobre</a></li>
+            <li class="nav-item"><a href="#perguntas-frequentes" class="nav-link px-3 text-center">Perguntas Frequentes</a></li>
+            <li class="nav-item"><a href="#fale-conosco" class="nav-link btn-proposta text-center">Fale Conosco</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-white">
+          <h1 class="display-5">Descomplique sua vida.</h1>
+          <h1 class="display-5">A gente cuida da sua contabilidade</h1>
+          <p class="lead text-justify">
+            Na <strong style="color: white; font-weight: bold;">MMV Serviços Contábeis</strong> a nossa prioridade é transformar a burocracia em tranquilidade e resultados para você.
+          </p>
+          <p class="lead text-justify">
+            Diga adeus as burocracias e desfrute das melhores soluções contábeis para o seu negócio.
+          </p>
+          <a href="#fale-conosco" class="btn btn-abrir-empresa mt-3">Abra sua empresa</a>
+        </div>
+
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <img src="img/michele-ft-sem-fundo.png" class="img-fluid mt-4" alt="Contadora MMV">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="porque-a-mmv">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img class="img-contabil" src="img/img-contabil.png" class="img-fluid mt-4" alt="imagem contabil">
+        </div>
+        <div class="col-md-6 text-center">
+          <h4 class="porque pt-1" style="color: gray;">Porquê a MMV Serviços Contábeis?</h4>
+          <p class="porque text-justify">
+            <i class="fas fa-check" style="color: green; font-size: 24px;">
+              <span style="color: gray;">Transparência e agilidade nos processos contábeis</span>
+            </i>
+            <i class="fas fa-check" style="color: green; font-size: 24px;">
+              <span style="color: gray;">A consultoria e acessoria que você precisa a qualquer hora</span>
+            </i>
+            <i class="fas fa-check" style="color: green; font-size: 24px;">
+              <span style="color: gray;">Suporte humanizado e prioridade na resolução dos seus problemas empresariais</span>
+            </i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nossos-servicos">
+    <div class="container py-5">
+      <h1 class="display-4">Conheça os nossos serviços</h1><br>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-6">
+          <div class="custom-col">
+            <h4>Contábil</h4>
+            <p class="text-justify">Cuidamos da contabilidade da sua empresa com precisão e responsabilidade. Realizamos escrituração contábil, apuração de resultados, obrigações acessórias e relatórios gerenciais para manter seu negócio em dia com a legislação e facilitar a tomada de decisões.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-6">
+          <div class="custom-col">
+            <h4>Fiscal</h4>
+            <p class="text-justify">Cuidamos da parte fiscal da sua empresa com atenção total aos impostos e prazos. Apuramos tributos, enviamos declarações obrigatórias e orientamos sobre o melhor regime tributário, sempre mantendo você em dia com o fisco e longe de problemas.</p>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-6">
+          <div class="custom-col">
+            <h4>Pessoal</h4>
+            <p class="text-justify">Cuidamos da folha, das admissões, demissões e de tudo que envolve seus funcionários. Com a gente, sua empresa fica em dia com a legislação trabalhista e você ganha mais tempo para focar no que importa.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-6">
+          <div class="custom-col">
+            <h4>Serviços de Legalização</h4>
+            <p class="text-justify">Cuidamos de toda a parte burocrática para regularizar sua empresa. Fazemos a abertura, alteração e fechamento de empresas, além de obter licenças e alvarás necessários para garantir que seu negócio esteja em conformidade com as leis e regulamentações.</p>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-12 col-lg-12">
+          <div class="custom-col">
+            <h4>Pessoa Física</h4>
+            <p class="text-justify">Oferecemos uma gestão contábil completa para pessoas físicas, cuidando de sua declaração de Imposto de Renda, organização de documentos, cálculos de tributos e planejamento financeiro. Garantimos que todas as obrigações fiscais sejam cumpridas corretamente, além de oferecer orientação para uma melhor organização tributária e financeira pessoal. Nosso objetivo é trazer mais tranquilidade e otimizar sua carga tributária, garantindo o máximo de benefícios legais.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="sobre">
+    <div class="container d-flex justify-content-center">
+      <div class="row align-items-start">
+        <div class="col-md-12 mb-4 mb-md-0">
+          <h1 class="display-4 text-center" style="gray">Sobre</h1>
+          <img src="img/michele-foto-sem-fundo.png" class="img-fluid mt-4 mx-auto d-block shadow rounded border border-secondary img-personalizada" alt="imagem contabil">
+          <p class="lead text-left">
+            A MMV Serviços Contábeis, sob a responsabilidade técnica de Michele Aparecida de Jesus Silva, 
+            atua há mais de 12 anos oferecendo suporte contábil especializado para micro e pequenas empresas, 
+            MEIs e profissionais liberais. Com ampla experiência nas áreas contábil, fiscal, pessoal e 
+            legalização de empresas, a MMV oferece soluções personalizadas que atendem às necessidades reais 
+            do empreendedor brasileiro. Nosso compromisso é garantir segurança, agilidade e clareza na gestão 
+            contábil, contribuindo diretamente para o crescimento e a regularidade dos negócios dos nossos 
+            clientes.
+          </p>
+          <p>
+            MMV: confiança, clareza e compromisso com o seu crescimento.
+          </p>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="perguntas-frequentes">
+    <div class="container d-flex justify-content-center">
+      <div class="row align-items-start">
+        <div class="col-md-12 mb-4 mb-md-0">
+          <h1 class="display-4 text-center pb-5" style="gray">Perguntas Frequentes</h1>
+          <p>
+            1. Quais serviços a MMV oferece?<br>
+            Resposta: A MMV Serviços Contábeis oferece uma ampla gama de soluções contábeis para micro e pequenas empresas, MEIs e 
+            profissionais liberais, incluindo serviços nas áreas contábil, fiscal, trabalhista e de legalização de empresas. 
+            Cuidamos da escrituração contábil, apuração de impostos, elaboração de folhas de pagamento, abertura e fechamento de empresas, 
+            além de consultoria tributária e contábil.
+          </p>
+
+          <p>
+            2. Como posso contratar os serviços da MMV?<br>
+            Resposta: Você pode entrar em contato conosco através do nosso formulário de contato, enviar um e-mail para 
+            mmvservicoscontabeis@gmail.com, ou ainda, nos chamar diretamente no WhatsApp pelo número (31) 98984-7513. Após o contato, agendamos 
+            uma consulta inicial para entender as necessidades da sua empresa e fornecer uma proposta personalizada.
+          </p>
+
+          <p>
+            3. A MMV também atende pessoas físicas?<br>
+            Resposta: Sim, a MMV também oferece serviços contábeis para pessoas físicas. Cuidamos de sua declaração de Imposto de Renda, 
+            organização de documentos fiscais, planejamento tributário e financeiro, e orientações para otimizar a sua carga tributária. Nosso 
+            objetivo é trazer mais tranquilidade e garantir que todas as suas obrigações fiscais sejam cumpridas corretamente.
+          </p>
+
+          <p>
+            4. Quais são os benefícios de contratar uma assessoria contábil? <br>
+            Resposta: Contratar uma assessoria contábil traz diversos benefícios,
+            como a regularização fiscal e tributária da sua empresa, a redução de erros e penalidades com o fisco, a tomada de decisões mais 
+            assertivas com base em relatórios contábeis, além de garantir mais tempo para que você possa se concentrar no crescimento do seu 
+            negócio. Também oferecemos suporte contínuo para quaisquer dúvidas ou necessidades relacionadas à contabilidade.
+          </p>
+
+          <p>
+            5. Qual é a importância de manter minha contabilidade em dia?
+            Resposta:
+            Manter sua contabilidade em dia é essencial para garantir que sua empresa esteja em conformidade com as obrigações fiscais e 
+            trabalhistas, evitando multas e juros por descumprimento da legislação. Além disso, uma contabilidade bem organizada ajuda na 
+            tomada de decisões estratégicas, fornecendo dados precisos sobre o desempenho da empresa.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="fale-conosco" class="py-5">
+    <div class="container">
+      <h1 class="display-4 text-center mb-4">Fale Conosco</h1>
+      <p class="lead text-center">
+        Precisa de ajuda contábil, quer tirar dúvidas ou solicitar um orçamento?<br>
+        Estamos aqui para ouvir você! A MMV Serviços Contábeis oferece um atendimento ágil, claro e totalmente humanizado para facilitar sua vida.
+      </p>
+
+      <div class="text-left mt-4">
+        <p class="text-center">
+          📞 <strong>WhatsApp:</strong>
+          <a href="https://wa.me/5531989847513" target="_blank" style="text-decoration: none; color: black">
+            (31) 98984-7513
+          </a>
+        </p>
+        <p class="text-center">
+          📧 <strong>E-mail:</strong>
+          <a href="mailto:mmvservicoscontabeis@gmail.com" style="text-decoration: none; color: black;">
+            mmvservicoscontabeis@gmail.com
+          </a>
+        </p>
+        <p class="text-center">
+          🕒 <strong>Horário de Atendimento:</strong> Segunda a Sexta, das 8h às 17h
+        </p>
+      </div>
+
+      <p class="text-center mt-4">
+        Ou, se preferir, preencha o formulário abaixo e retornaremos o mais breve possível.<br><br>
+        
+      </p>
+
+    <form id="contato-form" action="https://formspree.io/f/xeogrlgd" method="POST">
+          <div class="form-group col-12">
+            <input class="form-control mb-2" type="text" name="nome" placeholder="Nome" required>
+          </div>
+
+          <div class="form-group col-12">
+            <input class="form-control mb-2" type="email" name="_replyto" placeholder="E-mail" required>
+          </div>
+
+          <div class="form-group col-12">
+            <input class="form-control mb-2" type="tel" name="telefone" placeholder="Telefone com DDD" required
+            pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" title="Informe um telefone válido com DDD. Ex: (31) 91234-5678"
+            maxlength="15">
+          </div>
+
+          <div class="form-group col-12">
+            <input class="form-control mb-2" type="text" name="assunto" placeholder="Assunto" required>
+          </div>
+
+          <div class="form-group col-12">
+            <textarea class="form-control mb-3" name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+          </div>
+
+          <div class="text-center col-12">
+            <button class="btn btn-primary px-5" type="submit">Enviar</button>
+          </div>
+    </form>
+
+    <p class="text-center">
+      <strong>
+        Conte com a gente para cuidar da contabilidade do seu negócio com segurança e confiança!
+      </strong>
+    </p>
+
+
+  
+     
+
+
+
+            <!-- Mensagem oculta que será exibida após o envio -->
+            <div id="mensagem-sucesso" class="alert alert-success mt-3 text-center" style="display: none;">
+              Obrigado pelo contato! Sua mensagem foi enviada com sucesso. Em breve retornaremos.
+            </div>
+
+            <div id="mensagem-erro" class="alert alert-danger mt-4 mx-auto text-center" style="display: none; max-width: 600px; border: 1px solid #dc3545; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 8px; padding: 20px;">
+            <i class="fas fa-exclamation-circle" style="color: #dc3545; font-size: 24px; margin-bottom: 10px;"></i><br>
+            <strong>Ops! Algo deu errado.</strong><br>
+            Não foi possível enviar sua mensagem agora. Por favor, tente novamente mais tarde.
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+   <footer id="rodape">
+    <div class="container d-flex justify-content-center">
+      <div class="row align-items-center">
+        <div class="col-sm-3 col-md-3 mb-4 mb-md-0">
+          <img src="img/logorodape.png" alt="Logo MMV" class="img-fluid" style="max-height: 250px;">
+        </div>
+        <div class="col-sm-9 col-md-9 mb-4 mb-md-0">
+          2025 &copy; Todos os direitos reservados - <strong>MMV Servicos Contábeis Ltda</strong> 
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!--Adicionar botão fixo do WhatsApp-->
+  <a href="https://wa.me/5531989847513" 
+    class="whatsapp-fixo" 
+    target="_blank" 
+    title="Fale conosco pelo WhatsApp" 
+    aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-texto">Fale conosco</span>
+  </a>
+
+
+  <script>
+      const form = document.getElementById('contato-form');
+      const sucesso = document.getElementById('mensagem-sucesso');
+      const erro = document.getElementById('mensagem-erro');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        sucesso.style.display = 'none';
+        erro.style.display = 'none';
+
+      const dados = new FormData(form);
+
+      try {
+        const resposta = await fetch(form.action, {
+          method: form.method,
+          body: dados,
+          headers: { 'Accept': 'application/json' }
+        });
+
+      if (resposta.ok) {
+        form.reset();
+        sucesso.style.display = 'block';
+      } else {
+        erro.style.display = 'block';
+      }
+    } catch (e) {
+      erro.style.display = 'block';
+    }
+  });
+  </script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
