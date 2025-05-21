@@ -387,17 +387,40 @@
 
 
   <script>
+      /*Busca no HTML o elemento com o id="contato-form" — que é o formulário de contato.
+      Guarda esse elemento na variável form*/
       const form = document.getElementById('contato-form');
+      
+      /*Busca os elementos que mostram mensagens de sucesso e erro, guardando nas variáveis sucesso e erro
+      Geralmente são <div> ou <span> com essas IDs, que ficam escondidos ou visíveis conforme o resultado*/
       const sucesso = document.getElementById('mensagem-sucesso');
       const erro = document.getElementById('mensagem-erro');
 
+      /*Adiciona um evento que escuta o momento em que o formulário for enviado (submit). Usa uma função assíncrona (async) para poder 
+      usar await dentro del e o evento é disparado*/
       form.addEventListener('submit', async (e) => {
+        
+      /*Impede o comportamento padrão do formulário, que é recarregar a página ao enviar.
+        Isso deixa a gente controlar o envio via JavaScript*/
         e.preventDefault();
+
+      /*Esconde as mensagens de sucesso e erro para começar o envio limpo, sem mensagens visíveis.*/
         sucesso.style.display = 'none';
         erro.style.display = 'none';
 
-      const dados = new FormData(form);
+      /*Cria um objeto FormData com os dados do formulário — basicamente pega todos os campos e seus valores. Facilita enviar os dados 
+        para o servidor.*/
+        const dados = new FormData(form);
 
+
+
+      /*Tenta executar o bloco de código para enviar os dados para o servidor. 
+             Usa fetch() para fazer uma requisição HTTP:
+             form.action é a URL para onde o formulário deve ser enviado.
+             form.method é o método HTTP (normalmente POST).
+             body: dados envia os dados do formulário.
+             O cabeçalho 'Accept': 'application/json' indica que esperamos resposta no formato JSON.
+      */
       try {
         const resposta = await fetch(form.action, {
           method: form.method,
@@ -405,16 +428,32 @@
           headers: { 'Accept': 'application/json' }
         });
 
+
+
+
+      /*Se a resposta da requisição for sucesso (status HTTP 200-299):
+             Reseta o formulário, limpando os campos.
+             Mostra a mensagem de sucesso (sucesso.style.display = 'block').
+             Se não for sucesso, mostra a mensagem de erro.
+      */
       if (resposta.ok) {
         form.reset();
         sucesso.style.display = 'block';
       } else {
         erro.style.display = 'block';
       }
+
+      /*Caso aconteça algum erro (ex: falha de rede), a execução cai aqui. Mostra a mensagem de erro para avisar que o envio falhou.*/
+
     } catch (e) {
       erro.style.display = 'block';
     }
   });
+
+    /*Resumo geral:
+    Esse script envia um formulário via AJAX (sem recarregar a página), mostrando mensagens de sucesso ou erro 
+    de acordo com o resultado da requisição ao servidor.*/
+
   </script>
 
 
