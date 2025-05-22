@@ -10,6 +10,21 @@
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="icon" href="img/logosemfundo.png">
 
+  <!--Adicionando a biblioteca Sweet Alert 2-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Swal.fire({
+      title: 'Prazo do IRPF',
+      text: 'O prazo final para envio do Imposto de Renda é 30 de maio de 2025! Escolha quem conhece do assunto!',
+      icon: 'warning',
+      confirmButtonText: 'Entendi'
+    });
+  });
+</script>
+
   <style>
     @keyframes moveTitle {
       from {
@@ -129,7 +144,8 @@
     <div class="container">
       <div class="row align-items-start">
         <div class="col-md-6 mb-4 mb-md-0">
-          <img class="img-contabil" src="img/img-contabil.png" class="img-fluid mt-4" alt="imagem contabil">
+          <img src="img/img-contabil.png" class="img-contabil img-fluid mt-4" alt="imagem contabil">
+
         </div>
         <div class="col-md-6 text-center">
           <h4 class="porque pt-1" style="color: gray;">Porquê a MMV Serviços Contábeis?</h4>
@@ -200,7 +216,7 @@
     <div class="container d-flex justify-content-center">
       <div class="row align-items-start">
         <div class="col-md-12 mb-4 mb-md-0">
-          <h1 class="display-4 text-center" style="gray">Sobre</h1>
+          <h1 class="display-4 text-center" style="color:gray;">Sobre</h1>
           <img src="img/michele-foto-sem-fundo.png" class="img-fluid mt-4 mx-auto d-block shadow rounded border border-secondary img-personalizada" alt="imagem contabil">
           <p class="lead text-left">
             A MMV Serviços Contábeis, sob a responsabilidade técnica de Michele Aparecida de Jesus Silva, 
@@ -225,7 +241,7 @@
     <div class="container d-flex justify-content-center">
       <div class="row align-items-start">
         <div class="col-md-12 mb-4 mb-md-0">
-          <h1 class="display-4 text-center pb-5" style="gray">Perguntas Frequentes</h1>
+          <h1 class="display-4 text-center pb-5" style="color:gray;">Perguntas Frequentes</h1>
           <p>
             1. Quais serviços a MMV oferece?<br>
             Resposta: A MMV Serviços Contábeis oferece uma ampla gama de soluções contábeis para micro e pequenas empresas, MEIs e 
@@ -466,16 +482,7 @@
 
 
   <!-- Script para exibir o alerta -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    Swal.fire({
-      title: 'Prazo do IRPF',
-      text: 'O prazo final para envio do Imposto de Renda é 30 de maio de 2025! Escolha quem conhece do assunto!',
-      icon: 'warning',
-      confirmButtonText: 'Entendi'
-    });
-  });
-</script>
+  
 
 
 
