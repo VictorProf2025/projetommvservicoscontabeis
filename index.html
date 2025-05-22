@@ -67,12 +67,11 @@
     .img-personalizada:hover {
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9); /* Sombra mais forte ao passar o mouse */
       transform: scale(1.02); /* Leve aumento da imagem ao passar o mouse */
-
-
-    
-}
+    }
 
   </style>
+
+
 </head>
 
 <body style="background: white;">
@@ -99,6 +98,10 @@
       </div>
     </nav>
   </header>
+
+
+
+
 
   <section id="inicio">
     <div class="container">
@@ -454,7 +457,27 @@
     Esse script envia um formulário via AJAX (sem recarregar a página), mostrando mensagens de sucesso ou erro 
     de acordo com o resultado da requisição ao servidor.*/
 
+
   </script>
+
+  <!-- SweetAlert2 (no <head> ou antes do </body>)
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+  <!-- Script para exibir o alerta -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Swal.fire({
+      title: 'Prazo do IRPF',
+      text: 'O prazo final para envio do Imposto de Renda é 30 de maio de 2025! Escolha quem conhece do assunto!',
+      icon: 'warning',
+      confirmButtonText: 'Entendi'
+    });
+  });
+</script>
+
+
 
 
 
